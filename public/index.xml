@@ -12,14 +12,14 @@
       <link>http://localhost:1313/aufgabe_0/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/aufgabe_0/index.html</guid>
-      <description>This is a new chapter.&#xA;Important Geoviewer The true size of… </description>
+      <description>This is a new chapter.&#xA;Important Geoviewer The true size of… Übung 0 Ziel der Übung QGIS installieren (Falls noch nicht vorhanden). Eine geeignete Ordnerstruktur anlegen. Sich mit der Benutzeroberfläche vertraut machen. Erste Einstellungen vornehmen. Wiki: Installation QGIS Hinweise zur Verwendung von GIS-Software Was tun bei Problemen? Grundlegende Einstellungen Benutzeroberfläche anpassen (QGIS) Datenorganisation Geodatenformate Layer-Konzept kennenlernen (QGIS) Aufgaben Beginnt den Downloadprozess unter Beachtung der Hinweise zur Installation im Wiki (QGIS). Verschafft euch einen Überblick über Github und GitLab.</description>
     </item>
     <item>
       <title>Aufgabe 1</title>
       <link>http://localhost:1313/aufgabe_1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/aufgabe_1/index.html</guid>
-      <description>Ziel der Übung Die ersten Schritte wagen. Die Benutzeroberfläche verstehen und das Layer-Konzept kennenlernen. Vektor-Daten in einem GIS anzeigen und die Attributdaten einsehen. Vektor-Daten umprojizieren (d.h. die Projektion der Daten ändern). Wiki: Interface Layer-Konzept Attributdaten Projektionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel “Q://Abgabe”) an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.</description>
+      <description>Übung 1 Ziel der Übung Die ersten Schritte wagen. Die Benutzeroberfläche verstehen und das Layer-Konzept kennenlernen. Vektor-Daten in einem GIS anzeigen und die Attributdaten einsehen. Vektor-Daten umprojizieren (d.h. die Projektion der Daten ändern). Wiki: Interface Layer-Konzept Attributdaten Projektionen Daten Ladet euch die Daten herunter exercise_01b_data und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel “Q://Abgabe”) an und speichert dort die obigen Daten. (.</description>
     </item>
     <item>
       <title>Aufgabe 2</title>
@@ -33,14 +33,21 @@
       <link>http://localhost:1313/aufgabe_3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/aufgabe_3/index.html</guid>
-      <description>Übung 3 </description>
+      <description>Übung 3 Ziel der Übung Nicht-räumliche Abfragen durchführen. Räumliche Abfragen durchführen. Geometrieoperationen nutzen (z.B. die Fläche eines Polygons berechnen). Wiki: Nicht-Räumliche Abfragen Räumliche Abfragen Geometrieoperationen Daten Ladet euch und speichert sie auf eurem PC.&#xA;World Administrative Boundaries Level 0 (Countries) (Polygon) (Quelle: World Food Programme WFPGeonode) Urban Agglomerations Datensatz (Point) (Quelle: UN World Urbanization Prospects 2018) Aufgaben Öffne die oben angegebenen Dateien in QGIS. Wähle 3 Städte deiner Wahl (manuell) in der Benutzeroberfläche aus.</description>
     </item>
     <item>
       <title>Aufgabe 4</title>
       <link>http://localhost:1313/aufgabe_4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/aufgabe_4/index.html</guid>
-      <description>Übung 3 Ziel der Übung Nicht-räumliche Abfragen durchführen. Räumliche Abfragen durchführen. Geometrieoperationen nutzen (z.B. die Fläche eines Polygons berechnen). Wiki: Nicht-Räumliche Abfragen Räumliche Abfragen Geometrieoperationen Daten Ladet euch und speichert sie auf eurem PC.&#xA;World Administrative Boundaries Level 0 (Countries) (Polygon) (Quelle: World Food Programme WFPGeonode) Urban Agglomerations Datensatz (Point) (Quelle: UN World Urbanization Prospects 2018) Aufgaben Öffne die oben angegebenen Dateien in QGIS. Wähle 3 Städte deiner Wahl (manuell) in der Benutzeroberfläche aus.</description>
+      <description>Übung 4 Ziel der Übung Geometriefunktionen vertiefen. Vektordaten räumlich Verschneiden. Räumliche Joins durchführen. Tabellenfunktionen nutzen und einfache Statistiken erstellen. Wiki: Geometrieoperationen Räumliche Verschneidungen Räumliche Joins Tabellenfunktionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)&#xA;Osnabrück Fluss Hase (Line) Quelle: Osnabrück Straßennetzwerk (Line) Quelle: Osnabrück Stadtgrenze (Polygon) Quelle: Osnabrück Gebäude (Polygon) Quelle: Aufgaben Datenvorbereitung Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (Clip Funktion).</description>
+    </item>
+    <item>
+      <title>Einführung in QGIS für Geowissenschaften</title>
+      <link>http://localhost:1313/aufgabe_5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aufgabe_5/index.html</guid>
+      <description>Aufgabe 5 a &amp; b </description>
     </item>
   </channel>
 </rss>

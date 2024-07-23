@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Einführung in QGIS für Geowissenschaften :: My New Hugo Site</title>
+    <link>http://localhost:1313/aufgabe_5/index.html</link>
+    <description>Aufgabe 5 a &amp; b </description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <atom:link href="http://localhost:1313/aufgabe_5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aufgabe 5a</title>
+      <link>http://localhost:1313/aufgabe_5/5a/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aufgabe_5/5a/index.html</guid>
+      <description>Übung 5a Ziel der Übung web-basierte Hintergrundkarten nutzen Vektordaten händisch erstellen (Digitalisieren) Wiki: Basemaps Digitalisieren Daten Ladet euch die Daten herunter exercise_05a_data und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)&#xA;Aufgaben Häuser und Straßen kartieren Erstellt zwei neue Layer für (a) Häuser und (b) Straßen in Heidelberg. Fügt zu jedem Layer ein Attribute “Name” hinzu. Nutzt als Kartierungsgrundlage eine Hintergrundkarte auf Basis von Satellitendaten (z.</description>
+    </item>
+    <item>
+      <title>Aufgabe 5b</title>
+      <link>http://localhost:1313/aufgabe_5/5b/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aufgabe_5/5b/index.html</guid>
+      <description>Übung 5b Ziel der Übung web-basierte Hintergrundkarten nutzen Ein Bild Georeferenzieren Wiki: Basemaps Georeferenzieren Daten Ladet euch die Daten herunter exercise_05b_data und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)&#xA;Ein Bild georeferenzieren Kontext Du brauchst für dein Projekt eine geologische Karte von Heidelberg. Die einzig verfügbaren Informationen, die du finden kannst ist eine PDF Karte der Universität Heidelberg.</description>
+    </item>
+  </channel>
+</rss>

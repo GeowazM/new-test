@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aufgabe 4 :: My New Hugo Site</title>
-    <link>http://localhost:1313/aufgabe_4/index.html</link>
+    <link>http://localhost:1313/aufgabe_5a/index.html</link>
     <description>Übung 4 Ziel der Übung Geometriefunktionen vertiefen. Vektordaten räumlich Verschneiden. Räumliche Joins durchführen. Tabellenfunktionen nutzen und einfache Statistiken erstellen. Wiki: Geometrieoperationen Räumliche Verschneidungen Räumliche Joins Tabellenfunktionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)&#xA;Osnabrück Fluss Hase (Line) Quelle: Osnabrück Straßennetzwerk (Line) Quelle: Osnabrück Stadtgrenze (Polygon) Quelle: Osnabrück Gebäude (Polygon) Quelle: Aufgaben Datenvorbereitung Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (Clip Funktion).</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <atom:link href="http://localhost:1313/aufgabe_4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/aufgabe_5a/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

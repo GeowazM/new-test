@@ -3,7 +3,7 @@
   <channel>
     <title>Aufgabe 4 :: My New Hugo Site</title>
     <link>http://localhost:1313/aufgabe_3/index.html</link>
-    <description>Übung 3 </description>
+    <description>Übung 3 Ziel der Übung Nicht-räumliche Abfragen durchführen. Räumliche Abfragen durchführen. Geometrieoperationen nutzen (z.B. die Fläche eines Polygons berechnen). Wiki: Nicht-Räumliche Abfragen Räumliche Abfragen Geometrieoperationen Daten Ladet euch und speichert sie auf eurem PC.&#xA;World Administrative Boundaries Level 0 (Countries) (Polygon) (Quelle: World Food Programme WFPGeonode) Urban Agglomerations Datensatz (Point) (Quelle: UN World Urbanization Prospects 2018) Aufgaben Öffne die oben angegebenen Dateien in QGIS. Wähle 3 Städte deiner Wahl (manuell) in der Benutzeroberfläche aus.</description>
     <generator>Hugo</generator>
     <language>de</language>
     <atom:link href="http://localhost:1313/aufgabe_3/index.xml" rel="self" type="application/rss+xml" />

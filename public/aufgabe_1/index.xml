@@ -3,16 +3,9 @@
   <channel>
     <title>Aufgabe 1 :: My New Hugo Site</title>
     <link>http://localhost:1313/aufgabe_1/index.html</link>
-    <description>Ziel der Übung Die ersten Schritte wagen. Die Benutzeroberfläche verstehen und das Layer-Konzept kennenlernen. Vektor-Daten in einem GIS anzeigen und die Attributdaten einsehen. Vektor-Daten umprojizieren (d.h. die Projektion der Daten ändern). Wiki: Interface Layer-Konzept Attributdaten Projektionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel “Q://Abgabe”) an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.</description>
+    <description>Übung 1 Ziel der Übung Die ersten Schritte wagen. Die Benutzeroberfläche verstehen und das Layer-Konzept kennenlernen. Vektor-Daten in einem GIS anzeigen und die Attributdaten einsehen. Vektor-Daten umprojizieren (d.h. die Projektion der Daten ändern). Wiki: Interface Layer-Konzept Attributdaten Projektionen Daten Ladet euch die Daten herunter exercise_01b_data und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel “Q://Abgabe”) an und speichert dort die obigen Daten. (.</description>
     <generator>Hugo</generator>
     <language>de</language>
     <atom:link href="http://localhost:1313/aufgabe_1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tipp</title>
-      <link>http://localhost:1313/aufgabe_1/tipp/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/aufgabe_1/tipp/index.html</guid>
-      <description>hallo </description>
-    </item>
   </channel>
 </rss>
