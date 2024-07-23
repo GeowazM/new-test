@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="Übung 4 Ziel der Übung Geometriefunktionen vertiefen. Vektordaten räumlich Verschneiden. Räumliche Joins durchführen. Tabellenfunktionen nutzen und einfache Statistiken erstellen. Wiki: Geometrieoperationen Räumliche Verschneidungen Räumliche Joins Tabellenfunktionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
+Osnabrück Fluss Hase (Line) (Quelle: OpenStreetMap) Osnabrück Straßennetzwerk (Line) (Quelle: OpenStreetMap) Osnabrück Stadtgrenze (Polygon) (Quelle: OpenStreetMap) Osnabrück Gebäude (Polygon) (Quelle: OpenStreetMap) Aufgaben Datenvorbereitung Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (Clip Funktion).">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="Aufgaben xxx :: My New Hugo Site">
+    <meta name="twitter:description" content="Übung 4 Ziel der Übung Geometriefunktionen vertiefen. Vektordaten räumlich Verschneiden. Räumliche Joins durchführen. Tabellenfunktionen nutzen und einfache Statistiken erstellen. Wiki: Geometrieoperationen Räumliche Verschneidungen Räumliche Joins Tabellenfunktionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
+Osnabrück Fluss Hase (Line) (Quelle: OpenStreetMap) Osnabrück Straßennetzwerk (Line) (Quelle: OpenStreetMap) Osnabrück Stadtgrenze (Polygon) (Quelle: OpenStreetMap) Osnabrück Gebäude (Polygon) (Quelle: OpenStreetMap) Aufgaben Datenvorbereitung Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (Clip Funktion).">
+    <meta property="og:url" content="http://localhost:1313/aufgaben/index.html">
+    <meta property="og:site_name" content="My New Hugo Site">
+    <meta property="og:title" content="Aufgaben xxx :: My New Hugo Site">
+    <meta property="og:description" content="Übung 4 Ziel der Übung Geometriefunktionen vertiefen. Vektordaten räumlich Verschneiden. Räumliche Joins durchführen. Tabellenfunktionen nutzen und einfache Statistiken erstellen. Wiki: Geometrieoperationen Räumliche Verschneidungen Räumliche Joins Tabellenfunktionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
+Osnabrück Fluss Hase (Line) (Quelle: OpenStreetMap) Osnabrück Straßennetzwerk (Line) (Quelle: OpenStreetMap) Osnabrück Stadtgrenze (Polygon) (Quelle: OpenStreetMap) Osnabrück Gebäude (Polygon) (Quelle: OpenStreetMap) Aufgaben Datenvorbereitung Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (Clip Funktion).">
+    <meta property="og:locale" content="de">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="Aufgaben xxx :: My New Hugo Site">
+    <meta itemprop="description" content="Übung 4 Ziel der Übung Geometriefunktionen vertiefen. Vektordaten räumlich Verschneiden. Räumliche Joins durchführen. Tabellenfunktionen nutzen und einfache Statistiken erstellen. Wiki: Geometrieoperationen Räumliche Verschneidungen Räumliche Joins Tabellenfunktionen Daten Ladet euch die Daten herunter und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
+Osnabrück Fluss Hase (Line) (Quelle: OpenStreetMap) Osnabrück Straßennetzwerk (Line) (Quelle: OpenStreetMap) Osnabrück Stadtgrenze (Polygon) (Quelle: OpenStreetMap) Osnabrück Gebäude (Polygon) (Quelle: OpenStreetMap) Aufgaben Datenvorbereitung Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (Clip Funktion).">
+    <meta itemprop="wordCount" content="321">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <title>Aufgaben xxx :: My New Hugo Site</title>
+    <link href="/aufgaben/index.xml" rel="alternate" type="application/rss+xml" title="Aufgaben xxx :: My New Hugo Site"><img src="/images/favicon.png" alt="Beschreibung des Bildes">
+
+    <link href="/css/fontawesome-all.min.css?1721753808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721753808" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721753808" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721753808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721753808" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721753808" rel="stylesheet">
+    <link href="/css/fonts.css?1721753808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721753808" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721753808" rel="stylesheet">
+    <link href="/css/theme-relearn-auto.css?1721753808" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-auto.css?1721753808" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721753808" rel="stylesheet">
+    <link href="/css/print.css?1721753808" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1721753808"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/aufgaben/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#wiki">Wiki:</a></li>
+    <li><a href="#daten">Daten</a></li>
+    <li><a href="#aufgaben">Aufgaben</a>
+      <ul>
+        <li><a href="#datenvorbereitung">Datenvorbereitung</a></li>
+        <li><a href="#hochwasserbereich-ermitteln">Hochwasserbereich ermitteln</a></li>
+        <li><a href="#gebäude-nach-hochwassergefahr-einteilen">Gebäude nach Hochwassergefahr einteilen</a></li>
+        <li><a href="#hochwassergefährdete-bereiche-im-straßennetzwerk-ausweisen">Hochwassergefährdete Bereiche im Straßennetzwerk ausweisen</a></li>
+      </ul>
+    </li>
+    <li><a href="#so-oder-ähnlich-siehts-am-ende-aus">So (oder ähnlich) sieht&rsquo;s am Ende aus</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Aufgaben xxx</span><meta itemprop="position" content="1"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/aufgabe_4/index.html" title="Aufgabe 4 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable chapter narrow" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="chapter">
+            <header class="headline">
+            </header>
+<div class="article-subheading">Chapter 1</div>
+
+<h1 id="aufgaben-xxx">Aufgaben xxx</h1>
+
+<h1 id="übung-4">Übung 4</h1>
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+<ul>
+<li>Geometriefunktionen vertiefen.</li>
+<li>Vektordaten räumlich Verschneiden.</li>
+<li>Räumliche Joins durchführen.</li>
+<li>Tabellenfunktionen nutzen und einfache Statistiken erstellen.</li>
+</ul>
+<h2 id="wiki">Wiki:</h2>
+<ul>
+<li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Geometrieoperationen" rel="external" target="_self">Geometrieoperationen</a></li>
+<li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-R%C3%A4umliche-Verschneidungen" rel="external" target="_self">Räumliche Verschneidungen</a></li>
+<li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-R%C3%A4umliche-Joins" rel="external" target="_self">Räumliche Joins</a></li>
+<li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Tabellenfunktionen" rel="external" target="_self">Tabellenfunktionen</a></li>
+</ul>
+<h2 id="daten">Daten</h2>
+<p>Ladet euch <a href="exercise_04_data.zip">die Daten herunter</a> und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)</p>
+<ul>
+<li>Osnabrück Fluss Hase (Line) (Quelle: <a href="https://www.openstreetmap.org" rel="external" target="_self">OpenStreetMap</a>)</li>
+<li>Osnabrück Straßennetzwerk (Line) (Quelle: <a href="https://www.openstreetmap.org" rel="external" target="_self">OpenStreetMap</a>)</li>
+<li>Osnabrück Stadtgrenze (Polygon) (Quelle: <a href="https://www.openstreetmap.org" rel="external" target="_self">OpenStreetMap</a>)</li>
+<li>Osnabrück Gebäude (Polygon) (Quelle: <a href="https://www.openstreetmap.org" rel="external" target="_self">OpenStreetMap</a>)</li>
+</ul>
+<h2 id="aufgaben">Aufgaben</h2>
+<h3 id="datenvorbereitung">Datenvorbereitung</h3>
+<ol>
+<li>Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (<strong>Clip</strong> Funktion).</li>
+<li>Projiziert anschließend alle Daten in ein metrisches Koordinatensystem (z.B. WGS 84 / UTM 32N).</li>
+</ol>
+<h3 id="hochwasserbereich-ermitteln">Hochwasserbereich ermitteln</h3>
+<ol start="3">
+<li>Verbindet alle Teilstücke der Hase zu einer einzelnen Geometrie. Nutzt dazu die <strong>Dissolve</strong> Funktion.</li>
+<li>Zur Berechnung der Hochwassergefahr nutzen wir einen vereinfachten Ansatz. Berechnet 3 Stufen der Hochwassergefahr mithilfe der <strong>(Multiple)Buffer</strong>-Funktion:
+(a) alle Bereiche in Abstand von maximal 100 m zur Hase,
+(b) alle Bereiche zwischen 100 m und 200 m Abstand,
+(c) alle Bereiche mit einem Abstand von mehr als 200 m bis zu 300 m.</li>
+</ol>
+<ul>
+<li>optional: Färbt die Bereiche ensprechend der Hochwassergefahr ein.</li>
+</ul>
+<h3 id="gebäude-nach-hochwassergefahr-einteilen">Gebäude nach Hochwassergefahr einteilen</h3>
+<ol start="5">
+<li>Fügt zu jedem Gebäude die maximale Hochwassergefahrenklasse (a, b, c) hinzu. Nutzt dafür die <strong>Join Attribute by Location</strong> Funktion.</li>
+<li>Zählt wie viele Gebäude in jede der drei Klassen vorhanden sind. Erstellt dazu eine kategorisierte Statistik der Attributwerte (<strong>Statistic by categories</strong> Funktion) in Form einer Tabelle und speichert diese.</li>
+</ol>
+<ul>
+<li>optional: Färbt die Gebäude ensprechend der Hochwassergefahr ein.</li>
+<li>optional: Visualisiert die Statistik mit einem Balkendiagramm. Nutzt dafür ein Programm eurer Wahl (z.B. Excel).</li>
+</ul>
+<h3 id="hochwassergefährdete-bereiche-im-straßennetzwerk-ausweisen">Hochwassergefährdete Bereiche im Straßennetzwerk ausweisen</h3>
+<ol start="7">
+<li>Verschneidet das Straßennetzwerk mit dem Hochwassergefahr-Layer (<strong>Clip</strong>).</li>
+<li>Berechnet anschließend die Länge der neu enstandenen Straßensegmente (<strong>$length</strong>).</li>
+<li>Auf welcher Gesamtlänge sind die unterschiedlichen Straßentypen möglicherweise von Hochwasser pro Klasse (a, b, c) betroffen? Erstellt dafür eine gruppierte Statistik.</li>
+</ol>
+<ul>
+<li>optional: Visualisiert die Statistik in einem Balkendiagramm. Nutzt dafür ein Programm eurer Wahl (z.B. Excel).</li>
+</ul>
+<h2 id="so-oder-ähnlich-siehts-am-ende-aus">So (oder ähnlich) sieht&rsquo;s am Ende aus</h2>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<link src="/images/favicon.png" type="image/png">
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en', 'de'];
+        </script>
+        <script src="/js/auto-complete.js?1721753808" defer></script>
+        <script src="/js/lunr/lunr.min.js?1721753808" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1721753808" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1721753808" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1721753808" defer></script>
+        <script src="/js/lunr/lunr.de.min.js?1721753808" defer></script>
+        <script src="/js/search.js?1721753808" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/aufgabe_0/index.html" class=""><a class="padding" href="/aufgabe_0/index.html">Aufgabe 0</a></li>
+          <li data-nav-id="/aufgabe_1/index.html" class=""><input type="checkbox" id="R-section-7ee33ad87f0ec7cb75e0585defe7cbe8" aria-controls="R-subsections-7ee33ad87f0ec7cb75e0585defe7cbe8"><label for="R-section-7ee33ad87f0ec7cb75e0585defe7cbe8"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Aufgabe 1</span></label><a class="padding" href="/aufgabe_1/index.html">Aufgabe 1</a><ul id="R-subsections-7ee33ad87f0ec7cb75e0585defe7cbe8" class="morespace collapsible-menu">
+          <li data-nav-id="/aufgabe_1/tipp/index.html" class=""><a class="padding" href="/aufgabe_1/tipp/index.html">Tipp</a></li></ul></li>
+          <li data-nav-id="/aufgabe_2/index.html" class=""><a class="padding" href="/aufgabe_2/index.html">Aufgabe 2</a></li>
+          <li data-nav-id="/aufgabe_3/index.html" class=""><a class="padding" href="/aufgabe_3/index.html">Aufgabe 4</a></li>
+          <li data-nav-id="/aufgabe_4/index.html" class=""><a class="padding" href="/aufgabe_4/index.html">Aufgabe 4</a></li>
+          <li data-nav-id="/aufgaben/index.html" class="active"><a class="padding" href="/aufgaben/index.html">Aufgaben xxx</a></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften"><i class='fa-fw fab fa-github'></i> GitHub</a></li>
+            <li><a class="padding" href="/showcase/"><i class='fa-fw fas fa-camera'></i> Showcases</a></li>
+            <li><a class="padding" href="https://gohugo.io/"><i class='fa-fw fas fa-bookmark'></i> Hugo Documentation</a></li>
+            <li><a class="padding" href="/tags/index.html"><i class='fa-fw fas fa-tags'></i> Tags</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/aufgaben/index.html" lang="de" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-zen-auto" value="zen-auto">Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1721753808" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721753808" defer></script>
+    <script src="/js/theme.js?1721753808" defer></script>
+  </body>
+</html>
